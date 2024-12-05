@@ -1,0 +1,267 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    min-height: 100vh;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a5d8f;
+    color: #333;
+    line-height: 1.6;
+    min-height: 100vh;
+    height: 100%;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #17165a;
+    color: #04c9cf;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+/* Navegação */
+nav {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+/* Conteúdo Principal */
+main {
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 800px;
+    height: 75%;
+}
+
+/* Seções de apostas */
+.bet-section {
+    margin-bottom: 20px;
+}
+
+.bet-section h2 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+}
+
+.bet {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s;
+}
+
+.bet:hover {
+    background-color: #f9f9f9;
+}
+
+.bet-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.bet-odds {
+    color: #28a745;
+    font-weight: bold;
+}
+
+.bet-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.bet-button:hover {
+    background-color: #1a5d8f;
+}
+
+/* Rodapé */
+footer {
+    background-color: #282d31;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    bottom: 0;
+}
+
+title {
+    color: #2ab5ce;
+    background-color: #2ab5ce;
+}
+
+.jogo {
+    background-color: white;
+    width: 80%;
+    margin: auto;
+}
+
+/* Container e Cassino */
+.container {
+    display: flex;
+    flex-wrap: wrap;  /* Permite a quebra de linha em telas menores */
+    justify-content: center;
+    padding: 20px;
+    gap: 20px; /* Adiciona um pequeno espaçamento entre os itens */
+}
+
+.cassino {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+    max-width: 100%; /* Garante que a largura se ajuste a telas menores */
+    box-sizing: border-box;
+    flex: 1 1 calc(33% - 20px); /* Para 3 cassinos por linha em telas grandes */
+    transition: transform 0.3s ease;
+}
+
+.cassino:hover {
+    transform: scale(1.05); /* Efeito ao passar o mouse para melhorar a experiência */
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+p {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+    .cassino {
+        flex: 1 1 calc(50% - 20px); /* 2 cassinos por linha em telas médias */
+    }
+}
+
+@media (max-width: 768px) {
+    .cassino {
+        flex: 1 1 100%; /* Um cassino por linha em telas pequenas */
+    }
+    nav ul {
+        text-align: center;
+        padding: 0;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        font-size: 18px;
+        padding: 10px 0;
+    }
+
+    nav ul {
+        padding: 0;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    main {
+        padding: 10px;
+    }
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+p {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
